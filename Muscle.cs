@@ -10,10 +10,10 @@ namespace Heist2
         public void PerformSkill(int Bank)
         {
             int beatenGuard = Bank - SkillLevel;
-            Console.WriteLine($"{Name} is hacking the alarm system. Decreased security {SkillLevel} points");
-            if (hackedAlarm <= 0)
+            Console.WriteLine($"{Name} is beating up the security guards. Decreased security {SkillLevel} points");
+            if (beatenGuard <= 0)
             {
-                Console.WriteLine($"{Name} has disabled the alarm system!");
+                Console.WriteLine($"{Name} has whooped the guards!");
             }
         }
     }
